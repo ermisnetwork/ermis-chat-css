@@ -15,7 +15,7 @@
 }
 
 .str-chat__attachment-list {
-  /* The maximum allowed width and height of attachments, in case of gallery images this is the maximum size of the whole gallery (not just for a single image inside the gallery). There are some constraints for the acceptable values you can provide for this variable, [Angular documentation](https://getstream.io/chat/docs/sdk/angular/components/AttachmentListComponent/#maximum-size), [React documentation](https://getstream.io/chat/docs/sdk/react/message-components/attachment/#image-and-video-sizing). */
+
   --str-chat__attachment-max-width: calc(
     var(--str-chat__message-max-width) - calc(2 * var(--str-chat__attachment-margin))
   );
