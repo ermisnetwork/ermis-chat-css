@@ -9,10 +9,7 @@
   "private": false,
   "style": "dist/css/index.css",
   "scripts": {
-    "prepublishOnly": "yarn generate-docs",
     "build": "rm -rf dist/v2 && mkdir -p dist/v2/scss && yarn copy && yarn copy-assets && yarn compile-to-css && yarn copy-vendor-styles",
-    "generate-docs": "ts-node scripts/generate-docs.ts",
-    "replace-docs": "ts-node scripts/replacer.ts",
     "copy": "cp -R src/v2/styles/* dist/v2/scss",
     "compile-to-css": "sass src/v2/styles/index.scss dist/v2/css/index.css --style=compressed --no-source-map && sass src/v2/styles/index.layout.scss dist/v2/css/index.layout.css --style=compressed --no-source-map && sass src/vendor/emoji-mart.scss dist/v2/css/emoji-mart.css --style=compressed --no-source-map && sass src/v2/styles/_emoji-replacement.scss dist/v2/css/emoji-replacement.css --style=compressed --no-source-map",
     "copy-assets": "echo '\u001b[34mℹ\u001b[0m Copying assets to distributed directory' && cp -R src/assets dist/assets && echo '\u001b[32m✓\u001b[0m Finished copying assets'",
@@ -72,7 +69,6 @@
   },
   "files": [
     "dist",
-    "docs",
     "package.json",
     "README.md"
   ]
