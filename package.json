@@ -1,5 +1,5 @@
 {
-  "name": "@ermis/ermis-chat-css",
+  "name": "ermis-chat-css",
   "version": "0.0.1",
   "main": "dist/css/index.css",
   "description": "Bundled CSS for Ermis Chat web SDKs",
