@@ -1,8 +1,8 @@
 {
   "name": "ermis-chat-css",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "dist/css/index.css",
-  "description": "Bundled CSS for Ermis Chat web SDKs",
+  "description": "Bundled CSS for ErmisChat web SDKs",
   "repository": "git@github.com:ermisnetwork/ermis-chat-css.git",
   "author": "ErmisChat",
   "license": "MIT",

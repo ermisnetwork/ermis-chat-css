@@ -29,7 +29,9 @@
   --str-chat__message-background-color: transparent;
 
   /* The background color of a jumped-to message */
-  --str-chat__message-highlighted-background-color: var(--str-chat__message-highlight-color);
+  --str-chat__message-highlighted-background-color: var(
+    --str-chat__message-highlight-color
+  );
 
   /* Top border of the component */
   --str-chat__message-border-block-start: none;
@@ -53,10 +55,14 @@
   --str-chat__message-options-color: var(--str-chat__text-low-emphasis-color);
 
   /* The icon color used for displaying message options if a message option is clicked */
-  --str-chat__message-options-hover-background-color: var(--str-chat__tertiary-surface-color);
+  --str-chat__message-options-hover-background-color: var(
+    --str-chat__tertiary-surface-color
+  );
 
   /* The border radius used for displaying message options */
-  --str-chat__message-options-border-radius: var(--str-chat__border-radius-circle);
+  --str-chat__message-options-border-radius: var(
+    --str-chat__border-radius-circle
+  );
 
   /* The background color used if a message option is hovered */
   --str-chat__message-options-active-color: var(--str-chat__primary-color);
@@ -68,16 +74,22 @@
   --str-chat__message-bubble-color: var(--str-chat__text-color);
 
   /* The background of the message bubble */
-  --str-chat__message-bubble-background-color: var(--str-chat__secondary-surface-color);
+  --str-chat__message-bubble-background-color: var(
+    --str-chat__secondary-surface-color
+  );
 
   /* The text/icon of the message bubble, if the message was sent by the user */
   --str-chat__own-message-bubble-color: var(--str-chat__message-bubble-color);
 
   /* The background of the message bubble, if the message was sent by the user */
-  --str-chat__own-message-bubble-background-color: var(--str-chat__primary-surface-color);
+  --str-chat__own-message-bubble-background-color: var(
+    --str-chat__primary-surface-color
+  );
 
   /* The background of the message bubble, if it's a quoted message */
-  --str-chat__quoted-message-bubble-background-color: var(--str-chat__secondary-background-color);
+  --str-chat__quoted-message-bubble-background-color: var(
+    --str-chat__secondary-background-color
+  );
 
   /* Top border of the message bubble */
   --str-chat__message-bubble-border-block-start: none;
@@ -101,7 +113,9 @@
   --str-chat__deleted-message-color: var(--str-chat__text-low-emphasis-color);
 
   /* The background of a deleted message */
-  --str-chat__deleted-message-background-color: var(--str-chat__secondary-surface-color);
+  --str-chat__deleted-message-background-color: var(
+    --str-chat__secondary-surface-color
+  );
 
   /* Top border of a deleted message */
   --str-chat__deleted-message-border-block-start: none;
@@ -170,10 +184,14 @@
   --str-chat__date-separator-box-shadow: none;
 
   /* The text color of the translation notice that is displayed if a message is translated with auto-translation */
-  --str-chat__translation-notice-color: var(--str-chat__text-low-emphasis-color);
+  --str-chat__translation-notice-color: var(
+    --str-chat__text-low-emphasis-color
+  );
 
   /* The hover color of the translation notice that is displayed if a message is translated with auto-translation */
-  --str-chat__translation-notice-active-background-color: var(--str-chat__tertiary-surface-color);
+  --str-chat__translation-notice-active-background-color: var(
+    --str-chat__tertiary-surface-color
+  );
 }
 
 .str-chat__message--system {
@@ -202,6 +220,9 @@
   .str-chat__message-mention {
     color: var(--str-chat__message-mention-color);
     font: var(--str-chat__body2-medium-text);
+    &.mention-all {
+      color: var(--str-chat__red500);
+    }
   }
 
   .str-chat__message-bubble {
@@ -330,13 +351,17 @@
 .str-chat__li--single {
   .str-chat__message--other {
     .str-chat__message-bubble {
-      border-end-start-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
+      border-end-start-radius: calc(
+        var(--str-chat__message-bubble-border-radius) / 6
+      );
     }
   }
 
   .str-chat__message--me {
     .str-chat__message-bubble {
-      border-end-end-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
+      border-end-end-radius: calc(
+        var(--str-chat__message-bubble-border-radius) / 6
+      );
     }
   }
 }
@@ -345,15 +370,23 @@
 .str-chat__li--bottom {
   .str-chat__message--other {
     .str-chat__message-bubble {
-      border-start-start-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
-      border-end-start-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
+      border-start-start-radius: calc(
+        var(--str-chat__message-bubble-border-radius) / 6
+      );
+      border-end-start-radius: calc(
+        var(--str-chat__message-bubble-border-radius) / 6
+      );
     }
   }
 
   .str-chat__message--me {
     .str-chat__message-bubble {
-      border-start-end-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
-      border-end-end-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
+      border-start-end-radius: calc(
+        var(--str-chat__message-bubble-border-radius) / 6
+      );
+      border-end-end-radius: calc(
+        var(--str-chat__message-bubble-border-radius) / 6
+      );
     }
   }
 }
@@ -361,13 +394,17 @@
 .str-chat__message-with-thread-link {
   &.str-chat__message--other {
     .str-chat__message-bubble {
-      border-end-start-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
+      border-end-start-radius: calc(
+        var(--str-chat__message-bubble-border-radius) / 6
+      );
     }
   }
 
   &.str-chat__message--me {
     .str-chat__message-bubble {
-      border-end-end-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
+      border-end-end-radius: calc(
+        var(--str-chat__message-bubble-border-radius) / 6
+      );
     }
   }
 }
@@ -378,7 +415,9 @@
   .str-chat__quoted-message-bubble {
     @include utils.component-layer-overrides('message-bubble');
     background-color: var(--str-chat__quoted-message-bubble-background-color);
-    border-end-start-radius: calc(var(--str-chat__message-bubble-border-radius) / 6);
+    border-end-start-radius: calc(
+      var(--str-chat__message-bubble-border-radius) / 6
+    );
   }
 }
 
